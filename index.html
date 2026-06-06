@@ -104,12 +104,12 @@ The course is maintained by Himachal Tourism and accommodation near the course a
 
 <div class="gallery">
 
-<img src="img/11.jpeg" alt="Golf">
-<img src="img/4.jpeg" alt="Golf">
-<img src="img/1.jpeg" alt="Golf">
-<img src="img/22.jpeg" alt="Golf">
-<img src="img/3.jpeg" alt="Golf">
-<img src="img/25.jpeg" alt="Golf">
+<img src="img/11.jpeg" onclick="openLightbox(0)">
+<img src="img/4.jpeg" onclick="openLightbox(1)">
+<img src="img/1.jpeg" onclick="openLightbox(2)">
+<img src="img/22.jpeg" onclick="openLightbox(3)">
+<img src="img/3.jpeg" onclick="openLightbox(4)">
+<img src="img/25.jpeg" onclick="openLightbox(5)">
 
 </div>
 
@@ -143,6 +143,23 @@ Send Message
 
 </footer>
 <script src="script.js"></script>
+  <div id="lightbox">
+
+    <span class="close" onclick="closeLightbox()">
+        &times;
+    </span>
+
+    <span class="prev" onclick="changeImage(-1)">
+        &#10094;
+    </span>
+
+    <img id="lightbox-img">
+
+    <span class="next" onclick="changeImage(1)">
+        &#10095;
+    </span>
+
+</div>
 </body>
 
 </html>
