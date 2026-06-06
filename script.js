@@ -54,7 +54,7 @@ async function getWeather() {
 getWeather();
 const galleryImages = [
 
-    "11.jpeg",
+    "img/11.jpeg",
     "img/4.jpeg",
     "img/1.jpeg",
     "img/22.jpeg",
