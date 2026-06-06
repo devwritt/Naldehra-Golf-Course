@@ -239,3 +239,81 @@ font-size:35px;
 }
 
 }
+.contact-container{
+
+    display:flex;
+    gap:40px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+}
+
+.contact-info{
+
+    flex:1;
+
+    min-width:300px;
+
+    background:#f5f5f5;
+
+    padding:30px;
+
+    border-radius:10px;
+}
+
+.contact-form{
+
+    flex:1;
+
+    min-width:300px;
+}
+
+.contact-form form{
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:5px;
+}
+
+.contact-form button{
+
+    background:#0b3d2e;
+
+    color:white;
+
+    border:none;
+
+    padding:12px;
+
+    cursor:pointer;
+
+    border-radius:5px;
+}
+
+.contact-form button:hover{
+
+    opacity:0.9;
+}
+
+.map-section{
+
+    padding:80px 10%;
+}
+
+.map-section iframe{
+
+    border-radius:10px;
+}
