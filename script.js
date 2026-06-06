@@ -52,3 +52,76 @@ async function getWeather() {
 }
 
 getWeather();
+const galleryImages = [
+
+    "golf1.jpg",
+    "golf2.jpg",
+    "golf3.jpg",
+    "golf4.jpg"
+
+];
+
+let currentImage = 0;
+
+function openLightbox(index){
+
+    currentImage = index;
+
+    document.getElementById("lightbox").style.display = "flex";
+
+    document.getElementById("lightbox-img").src =
+        galleryImages[currentImage];
+}
+
+function closeLightbox(){
+
+    document.getElementById("lightbox").style.display = "none";
+}
+
+function changeImage(step){
+
+    currentImage += step;
+
+    if(currentImage < 0){
+
+        currentImage = galleryImages.length - 1;
+    }
+
+    if(currentImage >= galleryImages.length){
+
+        currentImage = 0;
+    }
+
+    document.getElementById("lightbox-img").src =
+        galleryImages[currentImage];
+}
+document.getElementById("lightbox").addEventListener("click", function(e){
+
+    if(e.target === this){
+
+        closeLightbox();
+    }
+
+});
+document.addEventListener("keydown", function(e){
+
+    if(document.getElementById("lightbox").style.display === "flex"){
+
+        if(e.key === "ArrowRight"){
+
+            changeImage(1);
+        }
+
+        if(e.key === "ArrowLeft"){
+
+            changeImage(-1);
+        }
+
+        if(e.key === "Escape"){
+
+            closeLightbox();
+        }
+
+    }
+
+});
