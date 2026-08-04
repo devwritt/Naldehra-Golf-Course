@@ -323,3 +323,107 @@ font-size:35px;
 
     background:white;
 }
+/* Smooth Transition */
+
+body{
+    transition:0.4s;
+}
+
+/* Toggle Button */
+
+.theme-toggle{
+
+    margin-left:15px;
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    background:#222;
+
+    color:white;
+
+    font-weight:bold;
+}
+
+.theme-toggle:hover{
+
+    opacity:0.9;
+}
+
+/* DARK MODE */
+
+body.dark-mode{
+
+    background:#121212;
+
+    color:white;
+}
+
+/* Sections */
+
+body.dark-mode section{
+
+    background:#121212;
+
+    color:white;
+}
+
+/* Cards */
+
+body.dark-mode .card{
+
+    background:#1f1f1f;
+
+    color:white;
+}
+
+/* Contact Box */
+
+body.dark-mode .contact-info{
+
+    background:#1f1f1f;
+
+    color:white;
+}
+
+/* Login Box */
+
+body.dark-mode .login-box{
+
+    background:#1f1f1f;
+
+    color:white;
+}
+
+/* Footer */
+
+body.dark-mode footer{
+
+    background:#000;
+}
+
+/* Headings */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3{
+
+    color:#ffffff;
+}
+
+/* Form Fields */
+
+body.dark-mode input,
+body.dark-mode textarea{
+
+    background:#2d2d2d;
+
+    color:white;
+
+    border:1px solid #555;
+}
