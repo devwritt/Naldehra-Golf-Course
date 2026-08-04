@@ -127,3 +127,42 @@ document.addEventListener("keydown", function(e){
     }
 
 });
+// ===============================
+// DARK / LIGHT MODE
+// ===============================
+
+const themeButton = document.getElementById("theme-toggle");
+
+// Load saved theme
+
+if(localStorage.getItem("theme") === "dark"){
+
+    document.body.classList.add("dark-mode");
+
+    themeButton.innerHTML="☀️ Light";
+
+}
+
+// Toggle Theme
+
+themeButton.addEventListener("click",function(){
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        localStorage.setItem("theme","dark");
+
+        themeButton.innerHTML="☀️ Light";
+
+    }
+
+    else{
+
+        localStorage.setItem("theme","light");
+
+        themeButton.innerHTML="🌙 Dark";
+
+    }
+
+});
