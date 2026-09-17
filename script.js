@@ -127,3 +127,15 @@ document.addEventListener("keydown", function(e){
     }
 
 });
+// =====================================
+// ANNOUNCEMENT BAR
+// =====================================
+
+function closeAnnouncement() {
+
+    const announcement =
+        document.querySelector(".announcement-bar");
+
+    announcement.style.display = "none";
+
+}
